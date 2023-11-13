@@ -27,7 +27,8 @@ ___
 
 cd /home/vboxuser/tools
 git clone https://github.com/Gallopsled/pwntools.git; https://github.com/longld/peda.git; https://github.com/pwndbg/pwndbg.git; https://github.com/hugsy/gef.git
-./pwndbg/setup.sh
+cd pwndbg
+sudo ./setup.sh
 
 # append to ~/.gdbinit
 
