@@ -3,6 +3,7 @@ sudo su
 apt install -y vim git gcc python3 qemu-user qemu-system gdb-multiarch libssl libffi-dev build-essential gem
 pip3 install --upgrade pwntools keystone-engine ropper keystone-engine
 
+mkdir /home/vboxuser/tools
 cd /home/vboxuser/tools
 git clone https://github.com/Gallopsled/pwntools.git; https://github.com/longld/peda.git; https://github.com/pwndbg/pwndbg.git; https://github.com/hugsy/gef.git
 ./pwndbg/setup.sh

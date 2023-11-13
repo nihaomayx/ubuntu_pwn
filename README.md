@@ -59,6 +59,7 @@ sudo gem install seccomp-tools
 
 ## LibcSearcher
 
+mkdir /home/vboxuser/tools
 cd home/vboxuser/tools
 git clone https://github.com.cnpmjs.org/lieanu/LibcSearcher.git
 sudo python3 ./LibcSearcher/setup.py install
