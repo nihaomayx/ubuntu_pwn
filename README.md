@@ -26,7 +26,7 @@ pip3 install --upgrade pwntools keystone-engine ropper keystone-engine<br />
 ___
 
 cd /home/vboxuser/tools<br />
-git clone https://github.com/Gallopsled/pwntools.git; https://github.com/longld/peda.git; https://github.com/pwndbg/pwndbg.git; https://github.com/hugsy/gef.git
+git clone https://github.com/Gallopsled/pwntools.git; https://github.com/longld/peda.git; https://github.com/pwndbg/pwndbg.git; https://github.com/hugsy/gef.git<br />
 cd pwndbg<br />
 sudo ./setup.sh<br />
 
