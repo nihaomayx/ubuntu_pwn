@@ -20,23 +20,27 @@ ___
 
 ___
 
-sudo apt install -y vim git gcc python3 qemu-user qemu-system gdb-multiarch libssl libffi-dev build-essential gem<br />
-pip3 install --upgrade pwntools keystone-engine ropper keystone-engine<br />
+```shell
+sudo apt install -y vim git gcc python3 qemu-user qemu-system gdb-multiarch libssl libffi-dev build-essential gem
+pip3 install --upgrade pwntools keystone-engine ropper keystone-engine
+```
 
 ___
 
-cd /home/vboxuser/tools<br />
-git clone https://github.com/Gallopsled/pwntools.git; https://github.com/longld/peda.git; https://github.com/pwndbg/pwndbg.git; https://github.com/hugsy/gef.git<br />
-cd pwndbg<br />
-sudo ./setup.sh<br />
+```shell
+cd /home/vboxuser/tools
+git clone https://github.com/Gallopsled/pwntools.git; https://github.com/longld/peda.git; https://github.com/pwndbg/pwndbg.git; https://github.com/hugsy/gef.git
+cd pwndbg
+sudo ./setup.sh
+```
 
 # append to ~/.gdbinit
 
 ___
 
-source /home/vboxuser/tools/pwndbg/gdbinit.py<br />
-\# source /home/vboxuser/tools/peda/peda.py<br />
-\# source /home/vboxuser/tools/gef-dev/gef.py<br />
+source /home/vboxuser/tools/pwndbg/gdbinit.py
+\# source /home/vboxuser/tools/peda/peda.py
+\# source /home/vboxuser/tools/gef-dev/gef.py
 
 # plugins
 
@@ -44,35 +48,60 @@ ___
 
 ## ROPgadget
 
-sudo pip3 install capstone<br />
-cd /home/vboxuser/tools<br />
-git clone https://github.com/JonathanSalwan/ROPgadget.git<br />
-sudo python3 ./ROPgadget/setup.py install<br />
+```shell
+sudo pip3 install capstone
+cd /home/vboxuser/tools
+git clone https://github.com/JonathanSalwan/ROPgadget.git
+sudo python3 ./ROPgadget/setup.py install
+```
 
 ## one_gadget
 
-sudo apt install -y ruby ruby-dev<br />
-sudo gem install one_gadget<br />
+```shell
+sudo apt install -y ruby ruby-dev
+sudo gem install one_gadget
+```
 
 ## seccomp-tools
 
-sudo gem install seccomp-tools<br />
+```shell
+sudo gem install seccomp-tools
+```
 
 ## LibcSearcher
 
-mkdir /home/vboxuser/tools<br />
-cd home/vboxuser/tools<br />
-git clone https://github.com.cnpmjs.org/lieanu/LibcSearcher.git<br />
-sudo python3 ./LibcSearcher/setup.py install<br />
+```shell
+mkdir /home/vboxuser/tools
+cd home/vboxuser/tools
+git clone https://github.com.cnpmjs.org/lieanu/LibcSearcher.git
+sudo python3 ./LibcSearcher/setup.py install
+```
 
 ## patchelf
 
-sudo apt install -y patchelf<br />
+```shell
+sudo apt install -y patchelf
+```
 
 ## ARM PWN
 
-sudo apt install -y gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu<br />
+```shell
+sudo apt install -y gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu
+```
 
 ## MIPS PWN
 
-sudo apt install -y gcc-mips-linux-gnu gcc-mipsel-linux-gnu gcc-mips64-linux-gnuabi64 gcc-mips64el-linux-gnuabi64<br />
+```shell
+sudo apt install -y gcc-mips-linux-gnu gcc-mipsel-linux-gnu gcc-mips64-linux-gnuabi64 gcc-mips64el-linux-gnuabi64
+```
+
+## Apktools
+
+<ol>
+<li> Download Linux [wrapper](https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool) script (Right click, Save Link As apktool)</li>
+<li> Download latest [Apktool](https://bitbucket.org/iBotPeaches/apktool/downloads)</li>
+<li> Rename downloaded jar to apktool.jar</li>
+<li> Move both files (apktool.jar & apktool) to /usr/local/bin(root needed)</li>
+<li> Make sure both files are executable(chmod + x)</li>
+<li> Try running apktool via cli</li>
+</ol>
