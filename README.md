@@ -14,6 +14,7 @@ ___
 </ul>
 <li> RAM: 10240MB</li>
 <li> Storage: 2.0T</li>
+<li> Display Memory: 128MB</li>
 </ul>
 
 # Installing
@@ -38,9 +39,9 @@ sudo ./setup.sh
 
 ___
 
-source /home/vboxuser/tools/pwndbg/gdbinit.py
-\# source /home/vboxuser/tools/peda/peda.py
-\# source /home/vboxuser/tools/gef-dev/gef.py
+source /home/vboxuser/tools/pwndbg/gdbinit.py<br />
+\# source /home/vboxuser/tools/peda/peda.py<br />
+\# source /home/vboxuser/tools/gef-dev/gef.py<br />
 
 # plugins
 
@@ -66,6 +67,11 @@ sudo gem install one_gadget
 
 ```shell
 sudo gem install seccomp-tools
+```
+
+## glibc-all-in-one
+```shell
+git clone https://github.com/matrix1001/glibc-all-in-one
 ```
 
 ## LibcSearcher
@@ -98,10 +104,18 @@ sudo apt install -y gcc-mips-linux-gnu gcc-mipsel-linux-gnu gcc-mips64-linux-gnu
 ## Apktools
 
 <ol>
-<li> Download Linux [wrapper](https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool) script (Right click, Save Link As apktool)</li>
+<li> Download Linux [wrapper](https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool) script (Right click, Save Link As ```apktool```)</li>
 <li> Download latest [Apktool](https://bitbucket.org/iBotPeaches/apktool/downloads)</li>
-<li> Rename downloaded jar to apktool.jar</li>
-<li> Move both files (apktool.jar & apktool) to /usr/local/bin(root needed)</li>
-<li> Make sure both files are executable(chmod + x)</li>
-<li> Try running apktool via cli</li>
+<li> Rename downloaded jar to ```apktool.jar```</li>
+<li> Move both files (```apktool.jar``` & ```apktool```) to ```/usr/local/bin```(root needed)</li>
+<li> Make sure both files are executable(```chmod + x```)</li>
+<li> Try running ```apktool``` via cli</li>
 </ol>
+
+## jadx
+
+```shell
+git clone https://github.com/skylot/jadx.git
+cd jadx
+./gradlew dist
+```
