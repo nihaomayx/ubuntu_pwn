@@ -1,6 +1,7 @@
-# apt-get update
+# update
 echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
 sudo apt-get update
+sudo apt update
 
 # libssl
 sudo apt-get install libssl
@@ -22,22 +23,9 @@ cd ..
 echo "# source /home/vboxuser/tools/peda/peda.py\n# source /home/vboxuser/tools/gef-dev/gef.py" >> ~/.gdbinit
 sudo apt install -y patchelf
 
-# ROPgadget
-pip3 install capstone
-git clone https://github.com/JonathanSalwan/ROPgadget.git
-sudo python3 ./ROPgadget/setup.py install
-
-# one-gadget seccomp-tools LibSearcher
-sudo apt install -y ruby ruby-dev
+# one-gadget
+sudo apt install -y ruby
 sudo gem install one_gadget
-sudo gem install seccomp-tools
-git clone https://github.com.cnpmjs.org/lieanu/LibcSearcher.git
-sudo python3 ./LibcSearcher/setup.py install
 
 # glibc-all-in-one
 git clone https://github.com/matrix1001/glibc-all-in-one
-
-# vscode
-[vscode](https://code.visualstudio.com/)
-and the extension
-**Python**
