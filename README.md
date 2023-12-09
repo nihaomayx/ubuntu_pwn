@@ -101,6 +101,12 @@ sudo apt install -y gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu
 sudo apt install -y gcc-mips-linux-gnu gcc-mipsel-linux-gnu gcc-mips64-linux-gnuabi64 gcc-mips64el-linux-gnuabi64
 ```
 
+## ghidra
+[ghidra](https://github.com/NationalSecurityAgency/ghidra/releases)
+
+## ida pro
+[ida pro](https://hex-rays.com/ida-pro/)
+
 ## Apktools
 
 <ol>
